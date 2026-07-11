@@ -11,6 +11,7 @@ const articles = defineCollection({
     coreTakeaway: z.string(),
     publishDate: z.date(),
     difficulty: z.enum(['Beginner', 'Intermediate', 'Advanced']),
+    relatedArticles: z.array(z.string()).optional(),
   }),
 });
 

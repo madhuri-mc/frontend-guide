@@ -29,6 +29,16 @@ const readTime = getReadTime(article.body ?? '');
 
   <article class="prose">
     <Content />
+    {article.data.relatedArticles && article.data.relatedArticles.length > 0 && (
+      <div class="related">
+        <h3>Related Reading</h3>
+        <ul>
+          {article.data.relatedArticles.map((slug) => (
+            <li><a href={`/articles/${slug}`}>{slug.replace(/-/g, ' ')}</a></li>
+          ))}
+        </ul>
+      </div>
+    )}
   </article>
 </Layout>
 
