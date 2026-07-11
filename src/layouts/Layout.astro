@@ -1,11 +1,11 @@
 ---
 import Analytics from '@vercel/analytics/astro';
+import '../styles/common.css';
 const { title, description = "Frontend Guide — practical explainers for real frontend developers" } = Astro.props;
 ---
 
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="/src/styles/common.css" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:title" content={title} />
@@ -85,7 +85,31 @@ const { title, description = "Frontend Guide — practical explainers for real f
         padding: 2.5rem 0;
       }
       @media (max-width: 700px) {
-        .layout { grid-template-columns: 1fr; }
+        .wrapper {
+          padding: 0 1rem;
+        }
+
+        .site-header {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.75rem;
+          padding: 1.25rem 0 1rem;
+        }
+
+        nav a {
+          margin-left: 0;
+          margin-right: 1rem;
+        }
+
+        .layout {
+          grid-template-columns: 1fr;
+          gap: 1.25rem;
+          padding: 1.25rem 0;
+        }
+
+        .site-footer {
+          padding: 1rem 0;
+        }
       }
 
       .sidebar h3 {

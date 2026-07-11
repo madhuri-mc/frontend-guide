@@ -90,6 +90,9 @@ const readTime = getReadTime(article.body ?? '');
     font-size: 1.05rem;
     line-height: 1.75;
     color: #222;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
   }
   .prose :global(h2) {
     font-size: 1.4rem;
@@ -107,6 +110,8 @@ const readTime = getReadTime(article.body ?? '');
     max-width: 100%;
     font-size: 0.88rem;
     margin: 1.2rem 0;
+    white-space: pre-wrap;
+    word-break: normal;
   }
   .prose :global(code) {
     font-family: 'SF Mono', Consolas, monospace;
@@ -117,5 +122,6 @@ const readTime = getReadTime(article.body ?? '');
     border-radius: 4px;
     font-size: 0.9em;
     color: #d63384;
+    white-space: normal;
   }
 </style>  
