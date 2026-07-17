@@ -1,4 +1,4 @@
-# Frontend Guide — Project Context
+# Frontend Guide — Project Brief
 
 Paste this entire document at the start of a new conversation to resume with full context.
 
@@ -67,8 +67,6 @@ schema: z.object({
 ```
 Additional sections (e.g. "More scenarios, quickly", "When you actually need this") are added when a topic benefits from extra practical decision-guidance beyond the core template.
 
-**Code example convention (added [today's date], applies from this point forward):** every code block that produces observable output (console logs, rendered values, state changes) should show the expected output alongside the code — either as inline comments (`// logs: ...`) for short snippets, or as a separate labeled block ("Console output:") for multi-step examples. This lets readers verify their own code against expected results without needing to run it themselves. Retroactively updating older articles to this convention is optional/lower priority — apply going forward first.
-
 ## Brand/design
 - Primary color: indigo `#4f46e5`
 - Category badge colors: React (indigo), CSS (pink `#db2777`), JavaScript (yellow `#ca8a04`), Career (green `#16a34a`), Performance (orange `#ea580c`), Accessibility (purple `#7c3aed`)
@@ -114,28 +112,3 @@ Longer-term: Google Search Console + sitemap submitted, Hacker News for stronges
 - [ ] `@astrojs/sitemap` integration — confirm installed and submitted
 - [ ] Email signup — not yet added
 - [ ] Older 5 articles (CSS/JS/Career/Performance/Accessibility) not yet updated to match the newer, deeper template structure
-
----
-
-## Development
-
-When starting the dev server, use background mode:
-
-```
-astro dev --background
-```
-
-Manage the background server with `astro dev stop`, `astro dev status`, and `astro dev logs`.
-
-## Documentation
-
-Full documentation: https://docs.astro.build
-
-Consult these guides before working on related tasks:
-
-- [Adding pages, dynamic routes, or middleware](https://docs.astro.build/en/guides/routing/)
-- [Working with Astro components](https://docs.astro.build/en/basics/astro-components/)
-- [Using React, Vue, Svelte, or other framework components](https://docs.astro.build/en/guides/framework-components/)
-- [Adding or managing content](https://docs.astro.build/en/guides/content-collections/)
-- [Adding styles or using Tailwind](https://docs.astro.build/en/guides/styling/)
-- [Supporting multiple languages](https://docs.astro.build/en/guides/internationalization/)

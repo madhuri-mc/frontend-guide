@@ -6,7 +6,7 @@ tags: ["react", "hooks", "useEffect", "rendering"]
 coreTakeaway: "useEffect exists to sync your component with the outside world — not to run logic on every render."
 publishDate: 2026-07-06
 difficulty: "Intermediate"
-relatedArticles: ["react-lifecycle-explained", "react-render-cycle-explained", "why-react-state-can-feel-stale"]
+relatedArticles: ["react-lifecycle-explained", "react-render-cycle-explained", "why-react-state-can-feel-stale", "usememo-usecallback-not-free"]
 ---
 
 ## What useEffect actually is
